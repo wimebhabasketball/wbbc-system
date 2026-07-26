@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wbbc-navy: #1E3A8A;   /* Biru Tua Utama */
+  --color-wbbc-navy-hover: #172554;
+  --color-wbbc-yellow: #FBBF24; /* Aksen Kuning */
+  --color-wbbc-red: #EF4444;    /* Aksen Merah */
+  
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
