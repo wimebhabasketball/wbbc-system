@@ -74,7 +74,8 @@ export default function Sidebar() {
 
             <nav className="flex-1 p-4 space-y-2">
                 {roleMenu.map((menu, idx) => {
-                    const isActive = pathname.startsWith(menu.path);
+                    const isIndexPage = menu.path === `/dashboard/${user.role}`;
+                    const isActive = isIndexPage ? pathname === menu.path : pathname.startsWith(menu.path);
                     return (
                         <Link
                             key={idx}
